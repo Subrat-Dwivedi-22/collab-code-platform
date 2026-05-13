@@ -12,7 +12,7 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import ForgotPassword from "./ForgotPassword";
-import { GoogleIcon, FacebookIcon, SitemarkIcon } from "./CustomIcons";
+import { GoogleIcon, FacebookIcon, CodeSyncIcon } from "./CustomIcons";
 import { useNavigate } from "react-router-dom";
 import API from "../../api/axios";
 
@@ -110,7 +110,7 @@ export default function SignInCard() {
   return (
     <Card variant="outlined">
       <Box sx={{ display: { xs: "flex", md: "none" } }}>
-        <SitemarkIcon />
+        <CodeSyncIcon />
       </Box>
       <Typography
         component="h1"
@@ -197,7 +197,7 @@ export default function SignInCard() {
         <Button
           fullWidth
           variant="outlined"
-          onClick={() => alert("Sign in with Google")}
+          onClick={() => alert("Google OAuth integration coming soon. Please use email/password login.")}
           startIcon={<GoogleIcon />}
         >
           Sign in with Google
@@ -205,7 +205,7 @@ export default function SignInCard() {
         <Button
           fullWidth
           variant="outlined"
-          onClick={() => alert("Sign in with Facebook")}
+          onClick={() => alert("Facebook authentication integration coming soon. Please use email/password login.")}
           startIcon={<FacebookIcon />}
         >
           Sign in with Facebook

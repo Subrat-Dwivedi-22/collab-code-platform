@@ -12,7 +12,7 @@ import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import ColorModeIconDropdown from "../../../shared-theme/ColorModeIconDropdown";
-import Sitemark from "./SitemarkIcon";
+import CodeSyncIcon from "./CodeSyncIcon";
 import { useNavigate } from "react-router-dom";
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -58,7 +58,7 @@ export default function AppAppBar() {
           <Box
             sx={{ flexGrow: 1, display: "flex", alignItems: "center", px: 0, justifyContent : "flex-start", gap: 1.5 }}
           >
-            <Sitemark />
+            <CodeSyncIcon />
             <Box sx={{ display: { xs: "none", md: "flex" } , }}>
               <Button
                 variant="text"

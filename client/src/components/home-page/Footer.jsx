@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
-import SitemarkIcon from './SitemarkIcon';
+import CodeSyncIcon from './CodeSyncIcon';
 
 function Copyright() {
   return (
@@ -22,7 +22,7 @@ function Copyright() {
           color: 'text.secondary',
         }}
       >
-        Sitemark
+        CodeSync
       </Link>
       {new Date().getFullYear()}
     </Typography>
@@ -58,7 +58,7 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <SitemarkIcon />
+            <CodeSyncIcon />
             <Typography variant="body2" gutterBottom sx={{ fontWeight: 600, mt: 2 }}>
               Join the newsletter
             </Typography>
@@ -270,13 +270,13 @@ export default function Footer() {
           <IconButton
             color="inherit"
             size="small"
-            href="https://github.com/mui"
+            href="https://github.com/Subrat-Dwivedi-22/CodeSync"
             aria-label="GitHub"
             sx={{ alignSelf: 'center' }}
           >
             <GitHubIcon />
           </IconButton>
-          <IconButton
+          {/* <IconButton
             color="inherit"
             size="small"
             href="https://x.com/MaterialUI"
@@ -293,7 +293,7 @@ export default function Footer() {
             sx={{ alignSelf: 'center' }}
           >
             <LinkedInIcon />
-          </IconButton>
+          </IconButton> */}
         </Stack>
       </Box>
     </Container>

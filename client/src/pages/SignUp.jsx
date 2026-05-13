@@ -18,7 +18,7 @@ import ColorModeSelect from "../../shared-theme/ColorModeSelect";
 import {
   GoogleIcon,
   FacebookIcon,
-  SitemarkIcon,
+  CodeSyncIcon,
 } from "../components/sign-up/CustomIcons";
 import API from "../api/axios";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -167,7 +167,7 @@ export default function SignUp(props) {
         sx={{ justifyContent: "space-between" }}
       >
         <Card variant="outlined">
-          <SitemarkIcon />
+          <CodeSyncIcon />
           <Typography
             component="h1"
             variant="h4"
@@ -247,7 +247,7 @@ export default function SignUp(props) {
             <Button
               fullWidth
               variant="outlined"
-              onClick={() => alert("Sign up with Google")}
+              onClick={() => alert("Google OAuth integration coming soon. Please use email/password sign up.")}
               startIcon={<GoogleIcon />}
             >
               Sign up with Google
@@ -255,7 +255,7 @@ export default function SignUp(props) {
             <Button
               fullWidth
               variant="outlined"
-              onClick={() => alert("Sign up with Facebook")}
+              onClick={() => alert("Facebook authentication integration coming soon. Please use email/password sign up.")}
               startIcon={<FacebookIcon />}
             >
               Sign up with Facebook
